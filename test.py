@@ -39,7 +39,7 @@ except:  # this exceptions will be caught when running job's via pipeline or spa
     os.environ["MLFLOW_WORKSPACE_NAME"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlworkspacename")
     os.environ["MLFLOW_SUBSCRIPTION_ID"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlsubscriptionid")
 
-    if args.repo_head:
+    if args.repo_head...!!
         os.environ["REPO_HEAD_HEXSHA"] = args.repo_head
 
 if __name__ == '__main__':
