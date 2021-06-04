@@ -22,6 +22,8 @@ import os
 import pyspark.sql.types as T
 import pyspark.sql.functions as F
 
+if(
+    
 try:
     environment_setup()
 except:  # this exceptions will be caught when running job's via pipeline or spark jobs on Databricks
