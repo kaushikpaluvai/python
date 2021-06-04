@@ -1,6 +1,8 @@
 import json
 import logging
 from datetime import datetime as dt
+from datetime import datetime as dt
+from datetime import datetime as dt
 
 from DiplaCoreSDK.Configurations.config import load_config
 from DiplaCoreSDK.Configurations.environment_setup import environment_setup
@@ -39,6 +41,8 @@ except:  # this exceptions will be caught when running job's via pipeline or spa
     os.environ["AZURE_SVCP_SECRET"] = dbutils.secrets.get(scope=azdb_secret_scope, key="svcpsecretkey")
     os.environ["MLFLOW_RESOURCE_GROUP"] = dbutils.secrets.get(scope=azdb_secret_scope, key="resourcegroup")
     os.environ["MLFLOW_WORKSPACE_NAME"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlworkspacename")
+    os.environ["MLFLOW_SUBSCRIPTION_ID"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlsubscriptionid")
+    os.environ["MLFLOW_SUBSCRIPTION_ID"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlsubscriptionid")
     os.environ["MLFLOW_SUBSCRIPTION_ID"] = dbutils.secrets.get(scope=azdb_secret_scope, key="amlsubscriptionid")
 
     if args.repo_head...!!
