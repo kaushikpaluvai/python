@@ -1,0 +1,19 @@
+{
+  "min_transaction_size": [2, 5, 10],
+  "max_transaction_size": [30, 50, 70],
+  "min_prod_prevalence": [200],
+  "min_prod_confidence": [0],
+  "min_prod_lift": [1.2, 1.5, 1.8],
+  "min_cat_prevalence": [250],
+  "min_cat_confidence": [0],
+  "min_cat_lift": [2, 3, 5],
+  "category_lift_discount_coef": [0.7],
+  "min_prod_lhs_threshold": [2],
+  "n_rhs_per_category": [2],
+  "min_prod_rhs_threshold": [2],
+  "product_identifier": ["upc_nbr"],
+  "backfill_category": ["prdt_lvl_4_dsc"],
+  "mining_category": ["prdt_lvl_6_dsc"],
+  "recommendation_window": [30, 60],
+  "convert_antecedent?": [false]
+}

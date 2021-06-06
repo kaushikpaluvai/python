@@ -12,10 +12,10 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: 
-    -  main
-    - feature/*
+  #push:
+    #branches: 
+    #-  main
+    #- feature/*
   pull_request:
     # The branches below must be a subset of the branches above
     branches: 
@@ -59,6 +59,11 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
+   # - name: Upload SARIF file
+   #   uses: github/codeql-action/upload-sarif@v1
+   #   with:
+       # Path to SARIF file relative to the root of the repository
+   #    sarif_file: /home/runner/work/python/results/python-builtin.sarif
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 https://git.io/JvXDl
